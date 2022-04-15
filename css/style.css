@@ -8,7 +8,7 @@
 }
 
 body{
-    background: linear-gradient(#af68ea,#6462e7);
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     height: 100vh;
     display: flex;
     font-family: 'kumbh sans';
@@ -16,6 +16,16 @@ body{
 
 main{
     margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.box{
+    position: absolute;
+    top: 45%;
+    left: -120px;
+    z-index: 2;
 }
 
 .container{
@@ -25,6 +35,7 @@ main{
     border-radius: 10px;
     padding: 70px 95px;
     align-items: center;
+    box-shadow: 0 20px 50px #0000006b;
 }
 
 .images{
@@ -58,6 +69,11 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.question:hover h2{
+    color: #d57e60;
 }
 
 h1{
@@ -69,6 +85,7 @@ h2{
     font-size: 16px;
     color: hsl(237, 12%, 33%);
     font-weight: 400;
+    transition: 0.2s;
 }
 
 .question img{
