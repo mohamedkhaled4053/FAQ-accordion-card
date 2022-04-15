@@ -21,31 +21,28 @@ main{
 .container{
     overflow: hidden;
     display: flex;
-    width: 920px;
-    justify-content: space-around;
     background-color: white;
     border-radius: 10px;
     padding: 70px 95px;
+    align-items: center;
 }
 
 .images{
     position: relative;
     display: flex;
     align-items: center;
+    left: -170px;
 }
 
 .images .bg{
     position: absolute;
-    right: 170px;
+    right: 0px;
     top: -360px;
 }
 
 .images .woman{
-    transform: translateX(-170px);
+    z-index: 1;
 }
-
-
-
 
 .text{
     width: 360px;
@@ -72,16 +69,34 @@ h2{
     font-size: 16px;
     color: hsl(237, 12%, 33%);
     font-weight: 400;
-    transition: 0.2s;
+}
+
+.question img{
+    transition: 0.4s;
 }
 
 .answer{
-    font-size: 12px;
-    color: hsl(240, 6%, 50%);
-    margin-top: 0;
     max-height: 0;
     overflow: hidden;
-    transition: 0.2s;
+    transition: 0.4s ease-out;
 }
 
+.answer p{
+    padding-top: 15px;
+    font-size: 12px;
+    color: hsl(240, 6%, 50%);
+}
+
+.active  .answer{
+    max-height: 50px;
+}
+
+.active h2{
+    color: black;
+    font-weight: 700;
+}
+
+.active img{
+    transform: rotate(180deg);
+}
 
