@@ -9,7 +9,7 @@
 
 body {
     background : linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    height     : 100vh;
+    max-height     : 100vh;
     display    : flex;
     font-family: 'kumbh sans';
 }
@@ -43,6 +43,10 @@ main {
     display    : flex;
     align-items: center;
     left       : -170px;
+}
+
+.images .mobile{
+    display: none;
 }
 
 .images .bg {
@@ -146,9 +150,18 @@ h2 {
         left: auto;
     }
 
+    
+    .images .mobile{
+        display: inline;
+    }
+
+    .images .desktop,.box{
+        display: none;
+    }
+
     .images .bg {
-        top     : -35px;
-        width   : 100%;
+        top: 125px;
+        width: 100%;
     }
 
     .images .woman {
