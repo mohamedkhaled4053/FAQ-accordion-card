@@ -9,7 +9,7 @@
 
 body {
     background : linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    max-height     : 100vh;
+    min-height     : 100vh;
     display    : flex;
     font-family: 'kumbh sans';
 }
@@ -124,13 +124,10 @@ h2 {
 
 @media (max-width:1110px) {
 
-    body {
-        height  : auto;
-    }
-
     main {
-        margin        : 150px 20px 90px;
+        margin        : 150px auto 90px;
         flex-direction: column;
+        max-width: 90%;
     }
 
     .box {
